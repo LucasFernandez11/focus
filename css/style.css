@@ -111,8 +111,7 @@ button {
 
 /* Estilos para el footer */
 footer {
-  background-color: #EC8802;
+  background: linear-gradient(90deg, rgb(236, 134, 2) 5%, rgb(127, 194, 236) 95%);
   color: #fff;
   text-align: center;
-  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
