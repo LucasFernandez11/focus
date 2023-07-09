@@ -1,13 +1,7 @@
 @import './utilities/variables';
 @import './base/reset';
 /* Estilos generales */
-body {
-    background-color: #333;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 .container {
     max-width: 1200px;
@@ -16,34 +10,70 @@ body {
 }
 
 .focus-color{
-    // background: linear-gradient(90deg, rgba(236,136,2,1) 48%, rgba(127,194,236,1) 48%);
     background: $focus-color;
     -webkit-background-clip: text;
     color: transparent;  
-   
 }
 
 /* Estilos para el header y el nav */
 header {
-    background:  linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%); 
+    // background:  $gradiente-focus-traslucido; 
+    background:  transparent; 
     
+    .logo-focus{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin-top: -50px;
+      
+
+    }
+    nav { 
+        text-align: center;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline;
+                margin-right: 10px;
+                a {
+                    text-decoration: none;
+                    color: $texto-blanco;
+                }
+            }
+        }
+    }
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.card-carreras{
+    background: $gradiente-focus-traslucido; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    .card{
+        background: $gradiente-focus-traslucido; 
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        border: none;
+    }
+    p{
+        color: $texto-blanco;
+    }
+    button{
+        background: $naranja-focus;
+        color: $texto-blanco;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
 
-nav li {
-    display: inline;
-    margin-right: 10px;
-}
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
 
 /* Estilos para las secciones */
 section {
@@ -58,20 +88,18 @@ section {
 #seccion2, #seccion3{
     margin-bottom: 3vh;
     height: 2vh;
-    background: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%); 
+    background: $gradiente-focus-traslucido; 
 }
 
 section h2 {
-    color: #fff;
+    color: $texto-blanco;
+    p {
+        color: $texto-blanco;
+    }
+    ul {
+        color: $texto-blanco;
+    }
     
-}
-
-section p {
-    color: #fff;
-}
-
-section ul {
-    color: #fff;
 }
 
 /* Estilos para el formulario de contacto */
@@ -81,7 +109,7 @@ form {
 }
 
 label {
-    color: #7FC2EC;
+    color: $azul-focus;
 }
 
 input,
@@ -89,13 +117,13 @@ textarea {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #fff;
-    color: #333;
+    background-color: $texto-blanco;
+    color: $color-fondo;
 }
 
 button {
-    background-color: #EC8802;
-    color: #fff;
+    background-color: $naranja-focus;
+    color: $texto-blanco;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -104,7 +132,7 @@ button {
 /* Estilos para el footer */
 footer {
     background: linear-gradient(90deg, rgb(236, 134, 2) 5%, rgb(127, 194, 236) 95%);;
-    color: #fff;
+    color: $texto-blanco;
     text-align: center;
-    // padding: 20px;
+    // padding: 20px; 
 }

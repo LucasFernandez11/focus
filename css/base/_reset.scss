@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
     line-height: 1.5;
-    color: #333;
+    font-size: 18px;
+    background-color: $color-fondo;
+    color: $texto-blanco;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }

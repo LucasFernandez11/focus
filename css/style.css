@@ -6,20 +6,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
   line-height: 1.5;
-  color: #333;
-}
-
-/* Estilos generales */
-body {
-  background-color: #333;
+  font-size: 18px;
+  background-color: #151515;
   color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Estilos generales */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,30 +23,63 @@ body {
 }
 
 .focus-color {
-  background: linear-gradient(90deg, rgb(236, 136, 2) 26%, rgb(127, 194, 236) 73%);
+  background: linear-gradient(90deg, rgb(236, 136, 2) 48%, rgb(127, 194, 236) 48%);
   -webkit-background-clip: text;
   color: transparent;
 }
 
 /* Estilos para el header y el nav */
 header {
-  background: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%);
+  background: transparent;
 }
-
-nav ul {
+header .logo-focus {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+header nav {
+  text-align: center;
+}
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-nav li {
+header nav ul li {
   display: inline;
   margin-right: 10px;
 }
-
-nav a {
+header nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+.card-carreras {
+  background: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.card-carreras .card {
+  background: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+}
+.card-carreras p {
+  color: #fff;
+}
+.card-carreras button {
+  background: #EC8802;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* Estilos para las secciones */
@@ -73,12 +102,10 @@ section {
 section h2 {
   color: #fff;
 }
-
-section p {
+section h2 p {
   color: #fff;
 }
-
-section ul {
+section h2 ul {
   color: #fff;
 }
 
@@ -98,7 +125,7 @@ textarea {
   padding: 10px;
   border: none;
   background-color: #fff;
-  color: #333;
+  color: #151515;
 }
 
 button {
