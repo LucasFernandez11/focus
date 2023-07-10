@@ -1,28 +1,51 @@
 header {
-    // background:  $gradiente-focus-traslucido; 
-    background:  transparent; 
-    background-color: #15151580;
-    .logo-focus{
-        width: 180px;
-        border-radius: 50%;
-        
+    .color-offcanva{
+        background: $color-fondo;
     }
+    .logo-offcanvas{
+        width: 80px;
+        background: $color-fondo; 
+    }
+    .navbar-brand{
+        margin: 0;
+    }
+
+    .logo-focus{
+        width: 100px;
+        background:  transparent;
+        margin: 0;
+        padding: 0;  
+            
+    }
+    .separador-barra{
+        width: 100px;
+    }
+
     .navbar-nav{
         a{
             font-size: 24px;
-            background: $texto-blanco;
+            background: $texto-gradiente;
             -webkit-background-clip: text;
             color: transparent; 
-        &:hover{
-        
-        
+        &:hover{        
             background: linear-gradient(51deg, rgba(127,194,236,1) 56%, rgba(236,136,2,1) 100%);
             -webkit-background-clip: text;
             color: transparent; 
             
         }
+      
         }
         
     }
+    // .offcanvas-body{
+    //     margin-left: -8px;
+    // }
 
+}
+
+@media screen and (min-width: 360px) {
+    .separador-barra{
+       display: none;
+    }
+    
 }

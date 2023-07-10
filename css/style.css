@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   background-color: #151515;
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -377,13 +377,24 @@ body {
   						supported by Chrome, Edge, Opera and Firefox */
 }
 
-header {
-  background: transparent;
-  background-color: rgba(21, 21, 21, 0.5019607843);
+header .color-offcanva {
+  background: #151515;
+}
+header .logo-offcanvas {
+  width: 80px;
+  background: #151515;
+}
+header .navbar-brand {
+  margin: 0;
 }
 header .logo-focus {
-  width: 180px;
-  border-radius: 50%;
+  width: 100px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+header .separador-barra {
+  width: 100px;
 }
 header .navbar-nav a {
   font-size: 24px;
@@ -397,6 +408,142 @@ header .navbar-nav a:hover {
   color: transparent;
 }
 
+@media screen and (min-width: 360px) {
+  .separador-barra {
+    display: none;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 20px;
+}
+
+textarea {
+  height: 320px;
+  width: 100%;
+  resize: none;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: white;
+  font-size: 2.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background: linear-gradient(to right bottom, #7fc2ec, #729cc1, #627895, #4e576b, #373944, #393546, #3e3146, #452b43, #7b3554, #b14152, #da5c3c, #ec8802);
+  color: white;
+}
+
+.button1:hover {
+  background: linear-gradient(51deg, rgb(127, 194, 236) 56%, rgb(236, 136, 2) 100%);
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background: linear-gradient(to right bottom, #7fc2ec, #729cc1, #627895, #4e576b, #373944, #393546, #3e3146, #452b43, #7b3554, #b14152, #da5c3c, #ec8802);
+  color: white;
+}
+
+.button2:hover {
+  background: linear-gradient(51deg, rgb(127, 194, 236) 56%, rgb(236, 136, 2) 100%);
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background: linear-gradient(to right bottom, #7fc2ec, #729cc1, #627895, #4e576b, #373944, #393546, #3e3146, #452b43, #7b3554, #b14152, #da5c3c, #ec8802);
+  color: white;
+}
+
+.button3:hover {
+  background-image: linear-gradient(163deg, rgba(160, 0, 0, 0.9803921569) 0%, #d10050 100%);
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  background: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+  max-width: 50vw;
+}
+
+.card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -407,34 +554,6 @@ header .navbar-nav a:hover {
   background: linear-gradient(90deg, rgb(236, 136, 2) 48%, rgb(127, 194, 236) 48%);
   -webkit-background-clip: text;
   color: transparent;
-}
-
-/* Estilos para el header y el nav */
-.card-carreras {
-  background: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.card-carreras .card {
-  background: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  border: none;
-}
-.card-carreras p {
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
-}
-.card-carreras button {
-  background: #EC8802;
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
 /* Estilos para las secciones */
@@ -451,17 +570,17 @@ section {
 #seccion2, #seccion3 {
   margin-bottom: 3vh;
   height: 2vh;
-  background: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%);
+  background: transparent;
 }
 
 section h2 {
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  color: #fff;
 }
 section h2 p {
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  color: #fff;
 }
 section h2 ul {
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  color: #fff;
 }
 
 /* Estilos para el formulario de contacto */
@@ -479,13 +598,13 @@ textarea {
   width: 100%;
   padding: 10px;
   border: none;
-  background-color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  background-color: #fff;
   color: #151515;
 }
 
 button {
   background-color: #EC8802;
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  color: #fff;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -494,6 +613,6 @@ button {
 /* Estilos para el footer */
 footer {
   background: linear-gradient(90deg, rgb(236, 134, 2) 5%, rgb(127, 194, 236) 95%);
-  color: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
+  color: #fff;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
