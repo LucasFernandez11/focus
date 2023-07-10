@@ -555,6 +555,13 @@ textarea {
   .separador-barra {
     display: none;
   }
+  .cards-container {
+    gap: 2em;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 360px) {
   .noselect {
     width: 100%;
   }
@@ -581,11 +588,6 @@ textarea {
 }
 
 /* Estilos para las secciones */
-section {
-  padding: 50px;
-  margin-bottom: 20px;
-}
-
 #seccion1 {
   margin-bottom: 3vh;
   height: 45vh;
