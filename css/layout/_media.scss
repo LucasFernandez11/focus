@@ -1,0 +1,24 @@
+/*HEADER*/
+@media screen and (min-width: 360px) {
+    .separador-barra{
+       display: none;
+    }
+    .noselect{
+        width: 100%;
+    }
+    
+}
+
+
+
+/*FORMS*/
+@media only screen and (max-width: 600px) {
+    .card{
+      max-width: 100vw;
+      #heading {      
+        font-size: 1.2em;
+      }
+    }
+
+    
+  }
