@@ -1,0 +1,28 @@
+header {
+    // background:  $gradiente-focus-traslucido; 
+    background:  transparent; 
+    background-color: #15151580;
+    .logo-focus{
+        width: 180px;
+        border-radius: 50%;
+        
+    }
+    .navbar-nav{
+        a{
+            font-size: 24px;
+            background: $texto-blanco;
+            -webkit-background-clip: text;
+            color: transparent; 
+        &:hover{
+        
+        
+            background: linear-gradient(51deg, rgba(127,194,236,1) 56%, rgba(236,136,2,1) 100%);
+            -webkit-background-clip: text;
+            color: transparent; 
+            
+        }
+        }
+        
+    }
+
+}

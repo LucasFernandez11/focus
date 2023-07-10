@@ -1,8 +1,8 @@
-$focus-color: linear-gradient(90deg, rgba(236,136,2,1) 48%, rgba(127,194,236,1) 48%);
+$focus-color: linear-gradient(90deg, rgba(236,136,2,1) 48%, rgb(127, 194, 236) 48%);
 $gradiente-focus: linear-gradient(90deg, rgba(236,136,2,1) 26%, rgba(127,194,236,1) 73%);
 $gradiente-focus-traslucido: linear-gradient(90deg, rgba(236, 134, 2, 0.588) 5%, rgba(127, 194, 236, 0.588) 95%);
 $naranja-focus: #EC8802;
 $azul-focus: #7FC2EC;
-$texto-blanco: #fff;
+$texto-blanco: linear-gradient(65deg, rgba(236,136,2,1) 0%, rgba(127,194,236,1) 100%);
 $texto-negro: #000;
 $color-fondo: #151515;
