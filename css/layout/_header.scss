@@ -1,0 +1,54 @@
+header {
+    .color-offcanva{
+        background: $color-fondo;
+    }
+    .logo-offcanvas{
+        width: 80px;
+        background: $color-fondo; 
+    }
+    .navbar-brand{
+        margin: 0;
+    }
+
+    .logo-focus{
+        width: 100px;
+        background:  transparent;
+        margin: 0;
+        padding: 0;  
+            
+    }
+    .separador-barra{
+        width: 100px;
+    }
+
+    .navbar-nav{
+        a{
+            color: white;
+            font-size: 1.4rem;
+             display: inline-block;
+             position: relative;   
+             &::after{
+                content:"" ;
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                bottom: 0;
+                left: 0;
+                background:linear-gradient(263deg, rgba(97, 124, 157, 0.83) 18.16%, #617C9D 43.48%, #B6833F 54.90%, rgba(236, 136, 2, 0.82) 81.27%);
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: 0.3s ease-in;
+             }
+             &:hover:after{
+                transform: scale(1);
+                transform-origin: bottom left;
+             }
+            }
+        
+    }
+    // .offcanvas-body{
+    //     margin-left: -8px;
+    // }
+
+}
+

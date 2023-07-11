@@ -18,7 +18,9 @@
 
 <body>
   <div id="top"></div>
-  <header >
+  <!------------------------------------------------------------------ H ---------------------------------------------------->
+  <header>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mx-5 pb-5 mb-5 fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="logo-focus" src="./assets/Marca2.png" alt="Logo Focus"></a>
@@ -37,16 +39,19 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page"   href="#top">Inicio</a>
+                <a class="nav-link" aria-current="page" href="#top">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#seccion2">Carreras</a>
+                <a class="nav-link" href="#seccion2">Carreras</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#seccion3">Cursos</a>
+                <a class="nav-link" href="#seccion5">Conocenos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#seccion4">Contacto</a>
+                <a class="nav-link" href="#seccion3">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#seccion4">Contacto</a>
               </li>
             </ul>
           </div>
@@ -55,22 +60,30 @@
       </div>
     </nav>
   </header>
-
+  <!------------------------------------------------------------------ M ---------------------------------------------------->
   <main class="pt-5">
     <section id="seccion1" class="my-5 py-5 text-center d-flex flex-column align-items-center justify-content-center">
-      <h2>Bienvenido a <span class="focus-color">FOCUS</span></h2>
+      <span>Bienvenido a <img src="./assets/Sin_academia_digital.png" alt=""></span>
       <h2>La mejor forma de aprender Online.</h2>
-      
+
     </section>
+       <!------------------------------------------------------------------ Start Nosotros---------------------------------------------------->
+       <section id="section5">
+
+       </section>
+       <!------------------------------------------------------------------ End Nosotros ---------------------------------------------------->
     <div id="seccion2" class="pt-3"></div>
     <section class="my-5 py-5">
       <section class="text-center">
         <h2>Carreras</h2>
         <p>¡Nuestras carreras pensadas para vos!</p>
         <p>Aprende a programar desde cero o mejora tus habilidades con nuestros cursos en línea.</p>
-        <ul>
       </section>
-      <section class="cards-container my-5">
+   
+      <!------------------------------------------------------------------ End Presentacion---------------------------------------------------->
+      <!------------------------------------------------------------------ StartCars ---------------------------------------------------->
+      <section class="cards-container">
+  
         <!----------Inicio de las cards---------->
         <div class="container noselect">
           <a class="canvas" href="#">
@@ -176,53 +189,58 @@
         </div>
 
         <!--EndCards-->
+
       </section>
     </section>
-
+    <!------------------------------------------------------------------ End Cards---------------------------------------------------->
+    <!------------------------------------------------------------------ StartCursos ---------------------------------------------------->
     <div id="seccion3" class="pt-5"></div>
     <section class="my-5 py-5 section-contenidos">
       <h2>Cursos</h2>
       <p>Cursos especializados para avanzar en tu carrera</p>
-     
-        <li><a href="">Curso Javascript</a></li>
-        <li><a href="">Curso Diseño UX/Ui</a></li>
-        <li><a href="">Curso Photoshop</a></li>
-        <li><a href="">Curso React.js</a></li>
+
+      <li><a href="">Curso Javascript</a></li>
+      <li><a href="">Curso Diseño UX/Ui</a></li>
+      <li><a href="">Curso Photoshop</a></li>
+      <li><a href="">Curso React.js</a></li>
       </ul>
     </section>
+    <!------------------------------------------------------------------ End Cursos---------------------------------------------------->
+    <!------------------------------------------------------------------ StartForms ---------------------------------------------------->
     <div id="seccion4" class="pt-5"></div>
     <section class="container-card mb-4">
       <div class="card mx-auto">
         <div class="card2">
           <form class="form">
-          <h2 id="heading">Contacto</h2>
-          
-          <div class="field">         
-            <input class="input-field" type="text" id="nombre" placeholder="Nombre" name="nombre" required autocomplete="off">
-          </div>
-          <div class="field">  
-            <input class="input-field" type="email" placeholder="Email" id="email" name="email" required>       
-          </div>
-          <div class="field">  
-            <textarea class="input-field" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>  
-          </div>
-          <div class="btn">
-          <button class="button2">Enviar</button>
-          </div>
-          
-      </form>
-        </div>
-          </div>
-    </section>
-   
-  </main>
+            <h2 id="heading">Contacto</h2>
 
+            <div class="field">
+              <input class="input-field" type="text" id="nombre" placeholder="Nombre" name="nombre" required
+                autocomplete="off">
+            </div>
+            <div class="field">
+              <input class="input-field" type="email" placeholder="Email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <textarea class="input-field" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="btn">
+              <button class="button2">Enviar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!------------------------------------------------------------------ F ---------------------------------------------------->
   <footer>
     <span>© 2023 - Mi Landing Page</span>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>

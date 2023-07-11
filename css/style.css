@@ -15,14 +15,97 @@ body {
   padding: 0;
 }
 
+/**generales**/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.focus-color {
+  background: linear-gradient(90deg, rgb(236, 136, 2) 48%, rgb(127, 194, 236) 48%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 /* Estilos generales */
+header .color-offcanva {
+  background: #151515;
+}
+header .logo-offcanvas {
+  width: 80px;
+  background: #151515;
+}
+header .navbar-brand {
+  margin: 0;
+}
+header .logo-focus {
+  width: 100px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+header .separador-barra {
+  width: 100px;
+}
+header .navbar-nav a {
+  color: white;
+  font-size: 1.4rem;
+  display: inline-block;
+  position: relative;
+}
+header .navbar-nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(263deg, rgba(97, 124, 157, 0.83) 18.16%, #617C9D 43.48%, #B6833F 54.9%, rgba(236, 136, 2, 0.82) 81.27%);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: 0.3s ease-in;
+}
+header .navbar-nav a:hover:after {
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+
+/*sections*/
+.section-contenidos {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para las secciones */
+#seccion1 {
+  margin-bottom: 3vh;
+  height: 45vh;
+}
+
+#seccion2, #seccion3 {
+  margin-bottom: 3vh;
+  height: 2vh;
+  background: transparent;
+}
+
+section h2 {
+  color: #fff;
+}
+section h2 p {
+  color: #fff;
+}
+section h2 ul {
+  color: #fff;
+}
+
 .cards-container {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 1em;
-  align-items: center;
-  height: 600px;
+  flex-direction: row;
 }
 
 /****/
@@ -379,37 +462,6 @@ body {
   						supported by Chrome, Edge, Opera and Firefox */
 }
 
-header .color-offcanva {
-  background: #151515;
-}
-header .logo-offcanvas {
-  width: 80px;
-  background: #151515;
-}
-header .navbar-brand {
-  margin: 0;
-}
-header .logo-focus {
-  width: 100px;
-  background: transparent;
-  margin: 0;
-  padding: 0;
-}
-header .separador-barra {
-  width: 100px;
-}
-header .navbar-nav a {
-  font-size: 24px;
-  background: linear-gradient(65deg, rgb(236, 136, 2) 0%, rgb(127, 194, 236) 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-header .navbar-nav a:hover {
-  background: linear-gradient(51deg, rgb(127, 194, 236) 56%, rgb(236, 136, 2) 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -541,74 +593,6 @@ textarea {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
 
-.section-contenidos {
-  width: 100%;
-  height: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/*HEADER*/
-@media screen and (min-width: 360px) {
-  .separador-barra {
-    display: none;
-  }
-  .cards-container {
-    gap: 2em;
-    width: 90vw;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 360px) {
-  .noselect {
-    width: 100%;
-  }
-}
-/*FORMS*/
-@media only screen and (max-width: 600px) {
-  .card {
-    max-width: 100vw;
-  }
-  .card #heading {
-    font-size: 1.2em;
-  }
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.focus-color {
-  background: linear-gradient(90deg, rgb(236, 136, 2) 48%, rgb(127, 194, 236) 48%);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-/* Estilos para las secciones */
-#seccion1 {
-  margin-bottom: 3vh;
-  height: 45vh;
-}
-
-#seccion2, #seccion3 {
-  margin-bottom: 3vh;
-  height: 2vh;
-  background: transparent;
-}
-
-section h2 {
-  color: #fff;
-}
-section h2 p {
-  color: #fff;
-}
-section h2 ul {
-  color: #fff;
-}
-
 /* Estilos para el formulario de contacto */
 form {
   display: grid;
@@ -636,9 +620,36 @@ button {
   cursor: pointer;
 }
 
+/**Estilos generales*/
 /* Estilos para el footer */
 footer {
   background: linear-gradient(90deg, rgb(236, 134, 2) 5%, rgb(127, 194, 236) 95%);
   color: #fff;
   text-align: center;
+}
+
+/*HEADER*/
+@media screen and (min-width: 360px) {
+  .separador-barra {
+    display: none;
+  }
+  .cards-container {
+    gap: 2em;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .noselect {
+    width: 100%;
+  }
+}
+/*FORMS*/
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: 100vw;
+  }
+  .card #heading {
+    font-size: 1.2em;
+  }
 }/*# sourceMappingURL=style.css.map */

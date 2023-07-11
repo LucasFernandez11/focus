@@ -1,11 +1,9 @@
 .cards-container{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 1em;
-    align-items: center;
-    height: 600px;
+    flex-direction: row;
+
 }
+
 /****/
 .container {
     position: relative;
