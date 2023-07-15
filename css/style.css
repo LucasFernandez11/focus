@@ -197,7 +197,7 @@ section h2 ul {
   border-radius: 20px;
   transition: 700ms;
   border-radius: 20px;
-  background: linear-gradient(238deg, #617C9D 0%, #617C9D 17.14%, #617C9D 32%, rgba(30, 39, 49, 0.38) 43.35%, rgba(0, 0, 0, 0.1) 52.57%, rgba(236, 136, 2, 0.82) 70.99%, rgba(236, 136, 2, 0.82) 82.62%);
+  background: linear-gradient(485deg, #617C9D 0%, #617C9D 17.14%, #617C9D 32%, rgba(30, 39, 49, 0.38) 43.35%, rgba(0, 0, 0, 0.1) 52.57%, rgba(236, 136, 2, 0.82) 70.99%, rgba(236, 136, 2, 0.82) 82.62%);
 }
 
 .subtitle {
@@ -279,7 +279,7 @@ section h2 ul {
 
 #card::before {
   content: "";
-  background: linear-gradient(238deg, #617C9D 0%, #617C9D 17.14%, #617C9D 32%, rgba(30, 39, 49, 0.38) 43.35%, rgba(0, 0, 0, 0.1) 52.57%, rgba(236, 136, 2, 0.82) 70.99%, rgba(236, 136, 2, 0.82) 82.62%);
+  background: linear-gradient(485deg, #617C9D 0%, #617C9D 17.14%, #617C9D 32%, rgba(30, 39, 49, 0.38) 43.35%, rgba(0, 0, 0, 0.1) 52.57%, rgba(236, 136, 2, 0.82) 70.99%, rgba(236, 136, 2, 0.82) 82.62%);
   filter: blur(2rem);
   opacity: 30%;
   width: 100%;
