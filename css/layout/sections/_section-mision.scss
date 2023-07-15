@@ -1,28 +1,96 @@
-.section-mision{
-    width: 100%;
- 
-}
-
 .mision-title{
     background-image:url("../assets/img/components-imgs/rectangle-1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    h2{
-        font-size: 1.5625rem;
-       padding-left: 2.3125rem;
-       font-family: $font-second;
-    font-weight: 300;
-        strong{
-            font-weight: 400;
-            font-size: 1.8125rem;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: 70% 0%;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: .625rem .625rem ;
+        text-align: center;
+        h2{
+            font-size: 1rem;
+            font-family: $font-second;
+            span{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                font-family: "arial-brian";
+            }
         }
-       span{
-        font-size: 3.125rem;
-        font-weight: bolder;
-        font-family: "arial-brian";
-       }
+}
+.mision-content{
+    padding: 0px .9375rem ;
+    padding-top: 1.25rem;
+    div{
+        h2,p{
+            padding: .75rem .625rem;
+            font-size: 1rem;
+            font-family: $font-second;
+            text-align: left;
+            word-spacing: .125rem;
+        }
+    }
+    div{
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+@media(min-width:768px){
+    .mision-content{
+        .mision_content-text{
+            div{
+                display: flex;
+            }
+        }
+        .mision_content-img{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
+      
+        }
+    }
+}
+@media (min-width:992px){
+    .mision-title{
+        text-align: left;
+        h2{
+            font-size: 1.25rem;
+            span{
+                font-size: 3.125rem;
+            }
+        }
+    }
+    .mision-content{
+        display: flex;
+        
+        .mision_content-text{
+            width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            h2{
+                font-size: 2.5rem;
+            }
+            div{
+            flex-direction: column;
+            p{
+                font-size: 1.25rem;
+            }
+          }
+        }
+    .mision_content-img{
+        width: 50%;
+        
+        img{
+            max-width: 100%;
+            margin-top: -6.25rem;
+            object-fit: contain;
+        }
+    }
     }
 }
