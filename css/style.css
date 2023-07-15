@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "arial-brian";
+  src: url("../assets/arial-brian.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +10,11 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "arial-brian";
   line-height: 1.5;
   font-size: 18px;
   background-color: #151515;
   color: #fff;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -462,6 +466,34 @@ section h2 ul {
   user-select: none;
   /* Non-prefixed version, currently
   						supported by Chrome, Edge, Opera and Firefox */
+}
+
+.section-mision {
+  width: 100%;
+}
+
+.mision-title {
+  background-image: url("../assets/img/components-imgs/rectangle-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.mision-title h2 {
+  font-size: 1.5625rem;
+  padding-left: 2.3125rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+.mision-title h2 strong {
+  font-weight: 400;
+  font-size: 1.8125rem;
+}
+.mision-title h2 span {
+  font-size: 3.125rem;
+  font-weight: bolder;
+  font-family: "arial-brian";
 }
 
 .form {

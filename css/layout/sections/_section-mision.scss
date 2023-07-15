@@ -1,0 +1,28 @@
+.section-mision{
+    width: 100%;
+ 
+}
+
+.mision-title{
+    background-image:url("../assets/img/components-imgs/rectangle-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    h2{
+        font-size: 1.5625rem;
+       padding-left: 2.3125rem;
+       font-family: $font-second;
+    font-weight: 300;
+        strong{
+            font-weight: 400;
+            font-size: 1.8125rem;
+        }
+       span{
+        font-size: 3.125rem;
+        font-weight: bolder;
+        font-family: "arial-brian";
+       }
+    }
+}

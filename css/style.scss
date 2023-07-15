@@ -1,5 +1,7 @@
 @import './utilities/variables';
+@import './base/typo';
 @import './base/reset';
+
 /* Estilos generales */
 @import "./layout/header";
 
@@ -9,7 +11,7 @@
 @import "./layout/sections/section-nosotros";
 @import "./components/cards-section";
 
-@import "./layout/sections/section-cursos";
+@import "./layout/sections/section-mision";
 @import "./components/form";
 
 /**Estilos generales*/
