@@ -536,7 +536,7 @@ section h2 ul {
   width: 100%;
   max-width: 100%;
   height: auto;
-  padding: 0.625rem 0.625rem;
+  padding: 0px 0.3125rem;
   text-align: center;
 }
 .mision-title h2 {
@@ -550,7 +550,7 @@ section h2 ul {
 }
 
 .mision-content {
-  padding: 0px 0.9375rem;
+  padding: 0px 0.3125rem;
   padding-top: 1.25rem;
 }
 .mision-content div h2, .mision-content div p {
@@ -559,6 +559,9 @@ section h2 ul {
   font-family: "Ubuntu", sans-serif;
   text-align: left;
   word-spacing: 0.125rem;
+}
+.mision-content div {
+  padding: 0px 0.625rem;
 }
 .mision-content div img {
   width: 100%;
@@ -579,6 +582,7 @@ section h2 ul {
 @media (min-width: 992px) {
   .mision-title {
     text-align: left;
+    padding: 1.625rem 6.625rem;
   }
   .mision-title h2 {
     font-size: 1.25rem;
@@ -588,6 +592,7 @@ section h2 ul {
   }
   .mision-content {
     display: flex;
+    padding: 0px 0px 0px 6rem;
   }
   .mision-content .mision_content-text {
     width: 50%;

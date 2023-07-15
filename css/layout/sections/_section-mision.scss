@@ -6,7 +6,7 @@
         width: 100%;
         max-width: 100%;
         height: auto;
-        padding: .625rem .625rem ;
+        padding: 0px .3125rem;
         text-align: center;
         h2{
             font-size: 1rem;
@@ -19,7 +19,7 @@
         }
 }
 .mision-content{
-    padding: 0px .9375rem ;
+    padding: 0px .3125rem;
     padding-top: 1.25rem;
     div{
         h2,p{
@@ -31,6 +31,7 @@
         }
     }
     div{
+        padding: 0px .625rem;
         img{
             width: 100%;
         }
@@ -58,6 +59,7 @@
 @media (min-width:992px){
     .mision-title{
         text-align: left;
+        padding: 1.625rem 6.625rem;
         h2{
             font-size: 1.25rem;
             span{
@@ -67,7 +69,7 @@
     }
     .mision-content{
         display: flex;
-        
+        padding: 0px 0px 0px 6rem; 
         .mision_content-text{
             width: 50%;
         display: flex;
