@@ -1,0 +1,35 @@
+.containre-card-encontrar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vh 0; 
+    
+    .card-encontrar{
+        background: linear-gradient(178.76deg, #1b1d2031 0.97%, #744A12 45.78%, #744A12 55.32%, #1b1d2019 98.94%);
+        height: 556px;
+        width: 394px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        .card-title{
+            font-size: 2.5rem;
+        } 
+        .card-body-encontrar{
+            font-size: 1.25rem;
+            padding: 2.75rem 3.625rem;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .containre-card-encontrar{
+        flex-direction: column;
+        align-items: center;
+        .card-encontrar{
+            margin: 2vh 0;
+        }
+    }
+    
+}

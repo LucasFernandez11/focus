@@ -6,8 +6,9 @@ header{
     overflow: hidden;
     img, svg {
       vertical-align: initial !important;
-  }
-  .nav-container{
+    }
+    .nav-container{
+    flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -43,6 +43,7 @@ header img, header svg {
   vertical-align: initial !important;
 }
 header .nav-container {
+  flex-wrap: nowrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -528,6 +529,37 @@ section h2 ul {
   						supported by Chrome, Edge, Opera and Firefox */
 }
 
+.containre-card-encontrar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5vh 0;
+}
+.containre-card-encontrar .card-encontrar {
+  background: linear-gradient(178.76deg, rgba(27, 29, 32, 0.1921568627) 0.97%, #744A12 45.78%, #744A12 55.32%, rgba(27, 29, 32, 0.0980392157) 98.94%);
+  height: 556px;
+  width: 394px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.containre-card-encontrar .card-encontrar .card-title {
+  font-size: 2.5rem;
+}
+.containre-card-encontrar .card-encontrar .card-body-encontrar {
+  font-size: 1.25rem;
+  padding: 2.75rem 3.625rem;
+}
+
+@media screen and (max-width: 768px) {
+  .containre-card-encontrar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .containre-card-encontrar .card-encontrar {
+    margin: 2vh 0;
+  }
+}
 .mision-title {
   background-image: url("../assets/img/components-imgs/rectangle-1.svg");
   background-repeat: no-repeat;
@@ -617,6 +649,94 @@ section h2 ul {
     margin-top: -6.25rem;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+.titulo-title {
+  background-image: url("../assets/img/components-imgs/rectangle-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 0%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 0px 0.3125rem;
+  text-align: center;
+}
+.titulo-title h2 {
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.titulo-title h2 span {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: "arial-brian";
+}
+
+.titulo-content {
+  padding: 0px 0.3125rem;
+  padding-top: 1.25rem;
+}
+.titulo-content div h2, .titulo-content div p {
+  padding: 0.75rem 0.625rem;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  text-align: left;
+  word-spacing: 0.125rem;
+}
+.titulo-content div {
+  padding: 0px 0.625rem;
+}
+.titulo-content div img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .titulo-content .titulo_content-text div {
+    display: flex;
+  }
+  .titulo-content .titulo_content-img {
+    display: flex;
+    justify-content: center;
+  }
+  .titulo-content .titulo_content-img img {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .titulo-title {
+    text-align: left;
+    padding: 1.625rem 6.625rem;
+  }
+  .titulo-title h2 {
+    font-size: 1.25rem;
+  }
+  .titulo-title h2 span {
+    font-size: 3.125rem;
+  }
+  .titulo-content {
+    display: flex;
+    padding: 0px 0px 0px 6rem;
+  }
+  .titulo-content .titulo_content-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo-content .titulo_content-text h2 {
+    font-size: 2.5rem;
+  }
+  .titulo-content .titulo_content-text div {
+    flex-direction: column;
+  }
+  .titulo-content .titulo_content-text div p {
+    font-size: 1.25rem;
+  }
+  .titulo-content .titulo_content-img {
+    width: 50%;
+  }
+  .titulo-content .titulo_content-img img {
+    max-width: 100%;
   }
 }
 .form {
@@ -796,7 +916,7 @@ footer {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1005px) {
   .logo {
     display: none;
   }
@@ -852,7 +972,7 @@ footer {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.834);
     position: fixed;
-    transform: translateX(-30rem);
+    transform: translateX(-62rem);
     z-index: 998;
     line-height: 1;
     font-size: 2.5rem;

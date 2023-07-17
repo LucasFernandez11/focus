@@ -1,0 +1,97 @@
+.titulo-title{
+    background-image:url("../assets/img/components-imgs/rectangle-1.svg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: 70% 0%;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 0px .3125rem;
+        text-align: center;
+        h2{
+            font-size: 1rem;
+            font-family: $font-second;
+            span{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                font-family: "arial-brian";
+            }
+        }
+}
+.titulo-content{
+    padding: 0px .3125rem;
+    padding-top: 1.25rem;
+    div{
+        h2,p{
+            padding: .75rem .625rem;
+            font-size: 1rem;
+            font-family: $font-second;
+            text-align: left;
+            word-spacing: .125rem;
+        }
+    }
+    div{
+        padding: 0px .625rem;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+@media(min-width:768px){
+    .titulo-content{
+        .titulo_content-text{
+            div{
+                display: flex;
+            }
+        }
+        .titulo_content-img{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
+      
+        }
+    }
+}
+@media (min-width:992px){
+    .titulo-title{
+        text-align: left;
+        padding: 1.625rem 6.625rem;
+        h2{
+            font-size: 1.25rem;
+            span{
+                font-size: 3.125rem;
+            }
+        }
+    }
+    .titulo-content{
+        display: flex;
+        padding: 0px 0px 0px 6rem; 
+        .titulo_content-text{
+            width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            h2{
+                font-size: 2.5rem;
+            }
+            div{
+            flex-direction: column;
+            p{
+                font-size: 1.25rem;
+            }
+          }
+        }
+    .titulo_content-img{
+        width: 50%;
+        
+        img{
+            max-width: 100%;          
+            // object-fit: cover;
+        }
+    }
+    }
+}
