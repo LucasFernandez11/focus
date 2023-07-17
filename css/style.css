@@ -737,6 +737,8 @@ section h2 ul {
   }
   .titulo-content .titulo_content-img img {
     max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 .form {
