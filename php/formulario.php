@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <body style='font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;'>
   
       <div style='background-color: #ffffff; border-radius: 5px; padding: 20px;'>
-          <h2 style='color: #333;'>Nuevo mensaje de contacto</h2>
+          <h2 style='color: #333;'>Nuevo mensaje desde el Sitio web Focus</h2>
           <p><strong>Nombre:</strong> $nombre</p>
           <p><strong>Email:</strong> $email</p>
           <p><strong>Mensaje:</strong></p>
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (mail($destinatario, $asunto, $contenido, $headers)) {  
     echo "Gracias por contactarnos, $nombre. Responderemos a la brevedad.";
-    echo "<br><br><a href='../index.html'>Volver</a>";
+    echo "<br><br><a href='../index.html'>Volver a Focus</a>";
 } else {
     echo 'Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.';
     echo "<br><br><a href='../index.html'>Volver</a>";
