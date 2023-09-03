@@ -12,14 +12,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   $headers = "From: $nombre <$email>";
 
-  if (mail($destinatario, $asunto, $contenido, $headers)) {
-    $response = array('success' => true, 'message' => 'Mensaje enviado con éxito.');
-  } else {
-    $response = array('success' => false, 'message' => 'Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
+  if (mail($destinatario, $asunto, $contenido, $headers)) {  
+    echo "Gracias por contactarnos, $nombre. Responderemos a la brevedad.";
+    echo "<br><br><a href='index.html'>Volver</a>"
+} else {
+    echo 'Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.';
+    echo "<br><br><a href='index.html'>Volver</a>"
   }
 
-  echo "Gracias por contactarnos, $nombre. Responderemos a la brevedad.";
-  echo "<br><br><a href='index.html'>Volver</a>"
 }
 
 ?>
