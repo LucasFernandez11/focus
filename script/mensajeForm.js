@@ -25,7 +25,7 @@
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        fetch('./php/formulario.php', {
+        fetch('../php/formulario.php', {
             method: 'POST',
             body: new FormData(form)
         })
