@@ -13,9 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $headers = "From: $nombre <$email>";
 
   if (mail($destinatario, $asunto, $contenido, $headers)) {
-    echo "Mensaje enviado con éxito. Gracias por contactarnos.";
+    $response = array('success' => true, 'message' => 'Mensaje enviado con éxito.');
   } else {
-    echo "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.";
+    $response = array('success' => false, 'message' => 'Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
   }
+
+  echo json_encode($response);
 }
+
 ?>
