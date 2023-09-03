@@ -18,7 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $response = array('success' => false, 'message' => 'Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
   }
 
-//   echo json_encode($response);
+  echo "Gracias por contactarnos, $nombre. Responderemos a la brevedad.";
+  echo "<br><br><a href='index.html'>Volver</a>"
 }
 
 ?>
